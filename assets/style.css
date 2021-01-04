@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: url('game_center.jpg');
+    background-size: 1366px 768px;
+    margin: auto;
+}
+
+header{
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+#box{
+    background-color: rgba(0,250,250,0.1);
+    margin: 0 250px;
+    padding: 20px;
+}
+
+main{
+    font-weight: bold;
+    margin: 0 100px;
+    color: white;
+}
+
+#name, #email, #number{
+    width: 560px;  
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+select{
+    width: 568px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.pilihan{
+    margin: 10px 0;
+}
+
+#submit{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: aqua;
+    border-style: none;
+    margin: 10px 0;
+    width: 568px;
+    padding: 10px 0;
+}

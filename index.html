@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href='assets/style.css'>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Penggunaan Steam</h1>
+        <p id="description">Untuk melihat preferensi pengguna aplikasi Steam</p>
+    </header>
+    <main>
+        <div id="box">
+            <form id="survey-form">
+                <label id="name-label" for="nama">Nama</label><br>
+                <input type="text" id="name" name="nama" placeholder="Masukkan Nama" required><br>
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan Email" required><br>
+                <label id="number-label" for="umur">Umur</label><br>
+                <input type="number" id="number" name="umur" placeholder="Masukkan Umur" min=15 max=60 required><br>
+                <label for="pekerjaan">Pekerjaan</label><br>
+
+                    <select name="pekerjaan" id="dropdown" form="survey-form">
+                        <option disabled selected>Pilih Pekerjaan</option>
+                        <option value="pengangguran">Pengangguran</option>
+                        <option value="siswa">Siswa</option>
+                        <option value="mahasiswa">Mahasiswa</option>
+                        <option value="pns">PNS</option>
+                        <option value="swasta">Swasta</option>
+                    </select><br>
+                
+                <p style="margin-bottom: 0px;">Apakah Anda akan merekomendasikan Steam kepada teman Anda?</p><br>
+                <input type="radio" class="pilihan" name="jawaban" value="iya">
+                <label for="iya">Iya</label><br>
+                <input type="radio" class="pilihan" name="jawaban" value="tidak">
+                <label for="tidak">Tidak</label><br>
+
+                <p style="margin-bottom: 0px;">Apa genre game yang sering Anda mainkan?</p><br>
+                <input type="checkbox" name="genre" value="mmorpg">
+                <label for="mmorpg">MMORPG</label><br>
+                <input type="checkbox" name="genre" value="action">
+                <label for="action">Action</label><br>
+                <input type="checkbox" name="genre" value="strategy">
+                <label for="strategy">Strategy</label><br>
+                <input type="checkbox" name="genre" value="horror">
+                <label for="horror">Horror</label><br>
+                <input type="checkbox" name="genre" value="adventure">
+                <label for="adventure">Adventure</label><br>
+                <input type="checkbox" name="genre" value="puzzle">
+                <label for="puzzle">Puzzle</label><br>
+                <input type="checkbox" name="genre" value="rpg">
+                <label for="rpg">RPG</label><br>
+                <input type="checkbox" name="genre" value="moba">
+                <label for="moba">MOBA</label><br>
+                <input type="checkbox" name="genre" value="openWorld">
+                <label for="openWorld">Open World</label><br>
+                
+                <p style="margin-top:30px; margin-bottom: 0px;">Kolom Komentar</p><br>
+                <textarea name="komentar" rows="4" cols="78" form="survey-form" placeholder="Tulis komentar disini"></textarea><br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
